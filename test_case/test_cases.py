@@ -1,3 +1,5 @@
+import os
+
 import pytest
 import pandas as pd
 import numpy as np
@@ -11,8 +13,7 @@ import argparse
 @pytest.fixture
 def df():
     # read testing data
-    #df = read_csv('/Users/HKaner/Desktop/HK/Tour/input/test.csv')
-    df = read_csv('./input/test.csv')
+    df = read_csv(os.getcwd()+'./input/test.csv')
     return df
 
 def test_columns_present(df):
