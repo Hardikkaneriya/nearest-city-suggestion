@@ -3,6 +3,7 @@ import common as common
 from log import log_details
 import sys
 import re
+import os
 
 
 log = log_details()
@@ -27,6 +28,7 @@ def get_city_names(df,source):
     except:
         log.exception('Failed while collecting city names')
         sys.exit(1)
+        
 def main(args):
     parser = argparse.ArgumentParser(description='Nearby Places locator')
     parser.add_argument('--city_name', required=True, default='',help='city name')
@@ -37,8 +39,7 @@ def main(args):
     log.info("Received Arguments...")
     log.info(args_dict)
 
-    #input_df= common.read_csv('/Users/HKaner/Desktop/HK/Tour/input/input.csv')
-    input_df= common.read_csv('./input/input.csv')
+    input_df= common.read_csv(os.getcwd()+'/input/input.csv')
     remove_null_df= common.remove_null(input_df)
     remove_duplicate_df=common.remove_duplicate(remove_null_df)
 
