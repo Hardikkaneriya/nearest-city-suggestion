@@ -1,0 +1,19 @@
+connection,distance,duration
+Prague<>Berlin, 400, 4
+Warsaw<>Berlin, 600, 6
+Berlin<>Munich, 800, 8
+Munich<>Vienna, 400, 3.5
+Munich<>Stuttgart, 800, 8
+Stuttgart<>Freiburg, 150, 2
+Stuttgart<>Zurich, 500, 5
+Strasbourg<>Freiburg, 100, 1
+Brussels<>Strasbourg,  800, 8
+Strasbourg<>Paris, 700, 7
+Brussels<>Cologne, 200, 2
+Cologne<>Amsterdam, 300, 3
+Freiburg<>Zurich, 300, 3
+Zurich<>Milan, 800, 8
+Milan<>Rome, 800, 8
+Lisbon<>Madrid, 300, 3
+Madrid<>Seville, 300, 3
+Madrid<>Barcelona, 400, 4
