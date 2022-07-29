@@ -12,4 +12,5 @@ above command will open terminal in docker container
 ## Run python main script with city name and duration as input
 ### python3 srs/main.py --city_name=Berlin --duration=10
 
-above command will display the output as well as create json file inside ouput folder
+above command will display the output as well as create json file inside ouput folder. change city name and distance argument value to check various outputs
+
