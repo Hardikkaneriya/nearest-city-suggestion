@@ -1,3 +1,5 @@
+import os
+
 import pandas as pd
 import sys
 import json
@@ -39,9 +41,8 @@ def remove_duplicate(df):
 
 def save_json(df):
     try:
-        #df.to_json('/Users/HKaner/Desktop/HK/Tour/output/output.json')
         log.info('writing output into json format.....')
-        df.to_json('./output/output.json')
+        df.to_json(os.getcwd()+'/output/output.json')
         log.info('output saved in json format in ./output/ folder ')
     except Exception as e :
         log.exception('Error while storing output'.format(e))
