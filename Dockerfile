@@ -11,3 +11,4 @@ ADD . /app
 RUN pip install .
 
 # ENTRYPOINT ["python", "./srs/main.py" ,  ,"Berlin" , "--duration" , "10"]
+ 
